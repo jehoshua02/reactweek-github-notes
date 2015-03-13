@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "App.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base public"
+  },
   "repository": {
     "type": "git",
     "url": ""

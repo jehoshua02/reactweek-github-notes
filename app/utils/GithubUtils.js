@@ -1,15 +1,14 @@
-var appConstants = require('../constants/appConstants');
 var axios = require('axios');
 var { client_id, client_secret } = require('../config/github');
 
-var param = "?client_id=" + client_id + "&client_secret=" + client_sec;
+var param = "?client_id=" + client_id + "&client_secret=" + client_secret;
 
 var githubUtils = {
-  getBio: function(username){
+  getBio: function(username) {
     var url = "https://api.github.com/users/" + username + param;
     return axios.get(url);
   },
-  getRepos: function(username){
+  getRepos: function(username) {
     var url = "https://api.github.com/users/" + username + "/repos" + param;
     return axios.get(url);
   }

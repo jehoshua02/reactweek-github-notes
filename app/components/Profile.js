@@ -1,6 +1,6 @@
 var React = require('react');
 var Router = require('react-router');
-var notesStore = require('../stores/notesStore');
+var Store = require('../stores/Notes');
 
 /*
 var Left = require('../components/Github/Left');

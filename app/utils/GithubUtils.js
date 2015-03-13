@@ -1,9 +1,8 @@
 var appConstants = require('../constants/appConstants');
 var axios = require('axios');
+var { client_id, client_secret } = require('../config/github');
 
-var id = "YOUR_CLIENT_ID_HERE";
-var sec = "YOUR_SECRET_ID_HERE";
-var param = "?client_id=" + id + "&client_secret=" + sec;
+var param = "?client_id=" + client_id + "&client_secret=" + client_sec;
 
 var githubUtils = {
   getBio: function(username){
